@@ -88,3 +88,34 @@ Task:
 
 ==================
 
+
+Ex_4:
+Method: GET
+EndPoint: /object_info_3
+request url params: 
+ name: str
+ age: int
+ salary: int
+
+response: 
+{'name': name,
+          'age': age,
+          'salary': salary,
+          'family': {'children': [['Alex', 24], ['Kate', 12]],
+                     'pets': {'cat':{'name':'Sunny',
+                                     'age': 3},
+                              'dog':{'name':'Luky',
+                                     'age': 4}},
+                     'u_salary_1_5_year': salary * 4}
+          }
+
+Task:
+Сделать и в Rewrite, и в BreakPoint (можно отключить чтобы не стопило на каждом запросе)
+- Сделать через Charles так, чтобы сервер вернул 500 код.
+- Сделать через Charles так, чтобы сервер вернул 405 код.
+
+![2023-03-02_12-48-22](https://user-images.githubusercontent.com/106372044/222364606-72514a75-67c0-4994-a870-bfd71866eb5e.png)
+
+![2023-03-02_12-53-52](https://user-images.githubusercontent.com/106372044/222366027-68b76967-5245-4d8c-84a8-062cd34d90d1.png)
+
+![2023-03-02_12-54-22](https://user-images.githubusercontent.com/106372044/222366116-c03660a4-e996-44cb-aa1f-33068b67a57f.png)
