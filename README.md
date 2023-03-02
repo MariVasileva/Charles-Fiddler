@@ -61,3 +61,28 @@ Task:
 
  
 ==================
+
+Ex_3:
+Method: GET
+EndPoint: /object_info_1
+request url params: 
+ name: str
+ age: int
+ weight: int
+
+response: 
+{'name': name,
+          'age': age,
+          'daily_food': weight * 0.012,
+          'daily_sleep': weight * 2.5}
+
+Task:
+Сделать и в Rewrite, и в BreakPoint (можно отключить чтобы не стопило на каждом запросе)
+ ⁃ Подменить параметры запроса в Charles так, чтобы в Postman пришел ответ где другое name, daily_food > weight из запроса, а daily_sleep < weight из запроса.
+ 
+ ![2023-03-02_12-17-01](https://user-images.githubusercontent.com/106372044/222358059-fd0a96f4-593c-4a76-9ac7-4afe553f7be1.png)
+
+ 
+
+==================
+
